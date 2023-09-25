@@ -2,3 +2,22 @@ html {
   height: 100%;
   width: 100%;
 }
+/* Just a simple CSS object to make a boder for the table*/
+/* Had a little fun making the color of the table and tried not to make it hard on the eyes*/
+th, table{
+  border: 2px solid black;
+}
+table{
+    background-color: gray;
+}
+
+thead{
+  background-color: #29ff69;
+  font-family: courier;
+  
+}
+tbody{
+  background-color: #24c8ff;
+    font-family: courier;
+}
+
