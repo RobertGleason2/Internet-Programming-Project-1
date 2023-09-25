@@ -1,23 +1,134 @@
+/* 
+Robert Gleason
+9/25/2023
+CPSC 2125
+*/
 html {
   height: 100%;
   width: 100%;
 }
+
+/* Since most of the stuff on these pages aren't that big, I chose to use a 3x2 grid and specified the dimensions */
+.layout{
+  display: grid;
+  grid-template-rows: 100px 400px 100;
+  grid-template-columns: 200px 600px 200;
+  grid-template-areas: 
+    "header header"
+    "nav    main  "
+    "footer footer"
+    ;
+  border: 1px solid black;
+  background-color: #bababa; 
+}
+
+.header{
+  grid-area: header;
+  border: 1px solid black;
+  color: blue;
+  
+}
+
+.main{
+  grid-area: main;
+  border: 1px solid black;
+}
+
+.nav{
+  grid-area: nav; 
+  border: 1px solid black;
+}
+
+.footer{
+  grid-area: footer;
+  border: 1px solid black;
+  font-style: italic;
+  color: #1166ee;
+  
+  
+}
+
+body{
+  background-color: #403f3f;
+  
+}
+
+a.active{
+
+  color: blue;
+  
+}
+
+a:hover{
+  color: green !important;
+  
+}
+
+a:visited{
+
+  color: red;
+  
+}
+
+img{
+  max-width: 80%;
+}
+
+h1{
+  
+  font-family:Times New Roman;
+  text-decoration: underline;
+  
+}
+
+h2{
+  text-decoration: underline;
+  font-family: sans-serif;
+  
+}
+
+/* I don't really know why the second upper level item is not following the rules set and couldn't really figure it out. It has something to do with the nested lists but i couldn't figure them out. */
+/* This will have the ordered list target the even list items*/
+ol>li:nth-child(even){
+  background-color: #21fdf9;
+  
+}
+
+/* This will have the ordered list target the odd list items*/
+ol>li:nth-child(odd){
+  background-color: #5cff7c;
+  
+}
+
+li{
+  font-family: Arial;
+}
+
+ul{
+  font-style: italic;
+}
+
 /* Just a simple CSS object to make a boder for the table*/
-/* Had a little fun making the color of the table and tried not to make it hard on the eyes*/
 th, table{
   border: 2px solid black;
 }
+
 table{
-    background-color: gray;
+  background-color: gray;
+  
 }
 
 thead{
-  background-color: #29ff69;
-  font-family: courier;
+  background-color: black;
+  color: white;
+  font-family: serif;
+  font-size: 1.5em;
   
 }
+
 tbody{
   background-color: #24c8ff;
-    font-family: courier;
+  font-family: serif;
+  font-size: 1.5em;
 }
 

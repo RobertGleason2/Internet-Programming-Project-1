@@ -1,3 +1,6 @@
+<!--Robert Gleason-->
+<!--9/25/2023-->
+<!--CPSC 2125-->
 <!DOCTYPE html>
 <html>
 
@@ -9,57 +12,66 @@
 </head>
 
 <body>
-  <header>
-    <img src="images/cybersecuritybanner.jpeg">
-  </header>
-  
-  <main>
-    <h1>Page 1</h1>
-    <h2>Some Concepts I have Learned So Far</h2>
-    <!-- The only way I could think of having the highest level of the list be uppercase Roman Numeral and the second level be lowercase Roman Numeral was having embedded lists in each item listed.-->
-    <ol type="I">
-      <!-- Item 1 of first ordered list-->
-      <li>Making a Grid in CSS</li>
-      <ol type="i">
-        <li>Grids are very useful in displaying the content you want to put on the webpage and are highly used. </li>
-        <li>There are many different ways you can display your content on a website using grids.</li>
-        <li>You can name the content area of a grid or the lines of a grid to specify where you want to place your items on the grid.</li>
-      </ol>
+  <div class="layout">
+    <div class="header">
+      <header>
+        <img src="images/cybersecuritybanner.jpeg">
+        <h1>Page 1</h1>
+      </header>
+    </div>
+    <div class="main">
+      <main>
+    
+      <h2>Some Concepts I have Learned So Far</h2>
+      <!-- The only way I could think of having the highest level of the list be uppercase Roman Numeral and the second level be lowercase Roman Numeral was having embedded lists in each item listed.-->
+        <ol type="I">
+          <!-- Item 1 of first ordered list-->
+          <li>Making a Grid in CSS</li>
+            <ol type="i">
+              <li>Grids are very useful in displaying the content you want to put on the webpage and are highly used. </li>
+              <li>There are many different ways you can display your content on a website using grids.</li>
+              <li>You can name the content area of a grid or the lines of a grid to specify where you want to place your items on the grid.</li>
+            </ol>
       <!-- Item 2 of first ordered list-->
-      <li>Adding images to websites</li>
-      <ol type="i">  
-        <li>You can add images to a website by using the &lt;img&gt;. This tag will load the picture specified </li> 
-        <li>When adding an image to a webpage, you need to specify the path where the image is contained.</li>
-        <li>You can add images by specifying the path of a url page or though a folder that the image is in attached to the project.</li>
-      </ol>
-      <!-- Item 3 of first ordered list-->
-       <li>Adding generic element tags</li>
-      <ol type="i">
-        <li>Generic Elements can be useful when wanting to add scripts or style rules to your page </li>
-        <li>Generic Elements are given semantic meanings with the class and id attribues which can be called back in the style and script pages.</li>
-        <li>The &lt;div&gt; block indicates the division of content (generic blpck level).</li>
-        <li>The &lt;span&gt; block indicates a word or phrase.</li>
-      </ol>
-    </ol>
-  </main>
+          <li>Adding images to websites</li>
+          <ol type="i">  
+            <li>You can add images to a website by using the &lt;img&gt;. This tag will load the picture specified </li> 
+            <li>When adding an image to a webpage, you need to specify the path where the image is contained.</li>
+            <li>You can add images by specifying the path of a url page or though a folder that the image is in attached to the project.</li>
+          </ol>
+          <!-- Item 3 of first ordered list-->
+          <li>Adding generic element tags</li>
+          <ol type="i">
+            <li>Generic Elements can be useful when wanting to add scripts or style rules to your page </li>
+            <li>Generic Elements are given semantic meanings with the class and id attribues which can be called back in the style and script pages.</li>
+            <li>The &lt;div&gt; block indicates the division of content (generic blpck level).</li>
+            <li>The &lt;span&gt; block indicates a word or phrase.</li>
+          </ol>
+        </ol>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home Page</a></li>
-      <li><a href="page2.html">Page 2</a></li>
-    </ul>
-  </nav>
+      </main>
+    </div>
+    <div class="nav">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href=style.css>Style Sheet</a></li>
+      </ul>
+    </nav>
+    </div>
+    <div class="footer">
+      <footer>
+      <!-- I'm using fake organization company here and don't want to put my phone number in case other people start calling me-->
+      <p>Contact Information:<br>
+        Robert Gleason<br>
+        CybersecurityCompany.org
+        </p>
+      </footer>
+    </div>
 
-  <footer>
-    <!-- I'm using fake organization company here and don't want to put my phone number in case other people start calling me-->
-    <p>Contact Information:<br>
-      Robert Gleason<br>
-      CybersecurityCompany.org
-    </p>
-  </footer>
 
-
-
+  </div>
 </body>
 
 </html>
